@@ -1,0 +1,8 @@
+biocompatibility-iso10993
+========================
+可插拔模块（lgd-skeleton/1.0）。生物学评价终点矩阵（ISO 10993-1 按接触类型）。
+入口: scripts/biocompat.py
+元数据: module.json
+总入口: medical-ai-toolkit
+关联: sterilization-validation, design-controls-toolkit, manufacturing-gmp
+许可: CC-BY-4.0 · 贡献者: @stevenzhao07 (MedXpert)

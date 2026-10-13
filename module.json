@@ -1,0 +1,42 @@
+{
+  "id": "biocompatibility-iso10993",
+  "title": "生物学评价终点矩阵（ISO 10993-1 按接触类型）",
+  "description": "ISO 10993-1:2018 生物学评价终点判定矩阵：按接触性质（表面/外部接入/植入）× 接触组织（皮肤/粘膜/损伤皮肤/组织/骨/血液/神经）× 接触时限（有限 ≤24h / 24h–30d / >30d）输出需评终点（细胞毒性/致敏/刺激/急性/亚慢性/慢性/遗传毒性/致癌/生殖/植入/血液相容性/降解），并给出化学表征（ISO 10993-18）与 Gap 分析清单。",
+  "triggers": {
+    "keywords": [
+      "iso10993",
+      "biocompatibility",
+      "生物相容性",
+      "细胞毒性",
+      "致敏",
+      "化学表征",
+      "endpoint-matrix",
+      "gap-analysis"
+    ],
+    "file_patterns": [
+      "biocompat.py"
+    ],
+    "intents": [
+      "生物相容性评价",
+      "终点选择",
+      "10993 矩阵"
+    ]
+  },
+  "provides": [
+    "biocompatibility-iso10993",
+    "endpoint-matrix",
+    "gap-analysis"
+  ],
+  "skills": [],
+  "needs_backends": [],
+  "license": "CC-BY-4.0",
+  "upstream": null,
+  "cost": "low",
+  "lazy": true,
+  "nested": true,
+  "entry": "scripts/biocompat.py",
+  "deps": [],
+  "generated_by": "lgd-skeleton/1.0 (manual port from rea scaffold)",
+  "idea": "ISO 10993-1 终点判定矩阵（接触类型×时限→需评终点）",
+  "extension_note": "新增终点：在 ENDPOINT_MATRIX 加一行。"
+}
